@@ -11,7 +11,7 @@ Pages publiques de l'appli, pour la fiche App Store (iPhone et Mac).
 Version anglaise dans `en/` (`index.html`, `support.html`, `privacy.html`).
 
 Site statique, sans script ni dépendance : GitHub Pages le sert tel quel
-(`.nojekyll` désactive le traitement Jekyll). Couleurs « ciel d’aube »,
+(`.nojekyll` désactive le traitement Jekyll). Style « tampon » en pastels (police Bricolage Grotesque, licence OFL),
 avec un mode sombre automatique.
 
 ## Publier sur GitHub Pages
