@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download Allège</title>
+<meta name="description" content="Compress photos and videos without losing quality.">
+<meta property="og:title" content="Download Allège">
+<meta property="og:description" content="Compress photos and videos without losing quality.">
+<meta property="og:image" content="https://remy901.github.io/allege-site/icon.png">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="../favicon.png">
+<script>
+(function () {
+  var ua = navigator.userAgent, ios = "https://apps.apple.com/app/id6832501781", android = "https://play.google.com/store/apps/details?id=com.allege.app", mac = true, macSeul = false;
+  var estIos = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var dest = estIos ? (macSeul ? "" : ios) : /Android/.test(ua) ? android : (mac && /Macintosh/.test(ua)) ? ios : "";
+  if (dest) location.replace(dest);
+})();
+</script>
+<style>
+:root { --accent: #ffd75e; --bg: #f6f4f1; --surface: #fff; --text: #1c1b1f; --muted: #6b6870; --border: #e4e0da; }
+@media (prefers-color-scheme: dark) { :root { --bg: #141316; --surface: #1e1d21; --text: #f2f0ed; --muted: #a3a0a8; --border: #2e2c31; } }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 32px 16px;
+  background: var(--bg); color: var(--text); text-align: center;
+  font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { width: 100%; max-width: 440px; background: var(--surface); border: 1px solid var(--border);
+  border-top: 6px solid var(--accent); border-radius: 22px; padding: 32px 24px; }
+.icone { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 6px 20px rgba(0,0,0,.15); }
+h1 { margin: 16px 0 4px; font-size: 26px; }
+.slogan { margin: 0 0 24px; color: var(--muted); }
+.stores { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.store { display: inline-flex; flex-direction: column; align-items: flex-start; min-width: 160px;
+  padding: 8px 18px; border-radius: 12px; background: #000; color: #fff; text-decoration: none;
+  font-size: 19px; font-weight: 600; line-height: 1.15; border: 1px solid #555; }
+.store small { font-size: 11px; font-weight: 400; }
+.store.off { opacity: .45; }
+.qr { margin-top: 24px; }
+.qr img { background: #fff; padding: 10px; border-radius: 14px; border: 1px solid var(--border); }
+.qr p, .note { margin: 8px 0 0; color: var(--muted); font-size: 15px; }
+.liens { margin-top: 24px; font-size: 15px; }
+.liens a { color: var(--text); text-underline-offset: 3px; margin: 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <img class="icone" src="../icon.png" alt="">
+  <h1>Allège</h1>
+  <p class="slogan">Compress photos and videos without losing quality.</p>
+  <div class="stores"><a class="store" href="https://apps.apple.com/app/id6832501781"><small>Download on the</small>App Store</a><a class="store" href="https://play.google.com/store/apps/details?id=com.allege.app"><small>Get it on</small>Google Play</a></div>
+  <div class="qr"><img src="../en/qr-download.png" alt="QR code" width="180" height="180"><p>Scan with your phone</p></div>
+  <p class="liens"><a href="https://remy901.github.io/allege-site/en/">Discover Allège</a> · <a href="../telecharger.html">Français</a></p>
+</main>
+</body>
+</html>
